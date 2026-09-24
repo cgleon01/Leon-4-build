@@ -1,18 +1,82 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    background-color: #F5F5F0;
+    padding: 1rem;
 }
 header {
     background-color: lightblue;
     text-align: center;
+    padding: 0.5rem;
+
 }
 .navbar ul {
     list-style: none;
     display: flex;
     justify-content: right;
+    background-color: rgb(226, 231, 233);
+    padding: 0.25em;
 }
 .navbar a {
     text-decoration: none;
     color: black;
     padding: 10px;
+    margin: 0 5px;
+}
+main > section {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: rgb(235, 234, 234);
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #000000;
+    width: fit-content;
+}
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+    border-radius: 2px;
+}
+ol.content {
+    list-style: none;
+    padding-left: 0rem;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: lightblue;
+    margin-top: 1rem;
+}
+@media (min-width: 615px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
